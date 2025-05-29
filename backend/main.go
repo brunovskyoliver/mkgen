@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"golang.org/x/crypto/ssh"
 	"io"
 	"log"
 	"net"
@@ -9,8 +10,6 @@ import (
 	"os"
 	"strings"
 	"time"
-
-	"golang.org/x/crypto/ssh"
 )
 
 var knockPorts = []int{5222}
